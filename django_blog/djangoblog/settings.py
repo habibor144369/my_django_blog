@@ -128,3 +128,4 @@ MESSAGE_TAGS = {
     messages.DEBUG: 'alert alert-info',
 }
 
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'

@@ -28,8 +28,8 @@ class article(models.Model):
     body = RichTextField(blank=True, null=True)
     # body = models.TextField()
     image = models.FileField()
-    posted_on = models.DateTimeField()
-    updated_on = models.DateTimeField()
+    posted_on = models.DateTimeField(auto_now=False, auto_now_add=True)
+    updated_on = models.DateTimeField(auto_now=False, auto_now_add=True)
     category = models.ForeignKey(category, on_delete=models.CASCADE)
 
     def __str__(self):
